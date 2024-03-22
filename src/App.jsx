@@ -3,10 +3,12 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Highlights from "./components/Highlights";
 import Model from "./components/Model";
+import Features from "./components/Features";
+import HowItWorks from "./components/HowItWorks";
 
 //...
 import * as Sentry from "@sentry/react";
-import Features from "./components/Features";
+import Footer from "./components/Footer";
 
 Sentry.init({
 	dsn: "https://e07a970dbf41fff14b63755911c4f678@o4506944127565824.ingest.us.sentry.io/4506944129400832",
@@ -42,6 +44,8 @@ const App = () => {
 			<Highlights />
 			<Model />
 			<Features />
+			<HowItWorks />
+			<Footer />
 		</main>
 	);
 };
